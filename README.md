@@ -1,10 +1,12 @@
-### info
+### Info
 Tools config and code snippets collection
 
-### catalog
+### Catalog
 
-- VS code custom snippets path in windows 7:
-  C:\Users\your-username\AppData\Roaming\Code\User\snippets\my.code-snippets
+* VS code custom snippets path in windows 7:
 
-- nginx.conf
-  /nginx/conf/nginx.conf
+C:\Users\your-username\AppData\Roaming\Code\User\snippets\my.code-snippets
+
+* nginx.conf
+
+/nginx/conf/nginx.conf
