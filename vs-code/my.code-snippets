@@ -15,18 +15,25 @@
         ],
         "description": "css link"
     },
-    "for loop code by ES5": {
+    "for_loop_ES5": {
         "prefix": "for5",
         "body": [
             "for (var i = 0; i < array.length; i++) {\n        var item = array[i];\n        $1\n};"
         ],
         "description": "ES5 for code"
     },
-    "css reset": {
+    "css_reset": {
         "prefix": "cssreset",
         "body": [
             "html,body{margin:0; padding:0; width:100vw; height:100vh; overflow: hidden;}\nbody{\n    font:normal 14px/1.5 \"Microsoft Yahei\", \"Lucida Grande\", Tahoma, Verdana, STXihei, hei;\n    color:#000;\n    background-color:#fdd69d;\n}\nul,ol,li,em,p,span,h1,h2{margin:0; padding:0; font-weight:normal; list-style:none; font-style:normal}\na{text-decoration: none; color: #366;}\n:focus {outline: 0;}\n.show {display: block !important;}\n.hide {display: none !important;}"
         ],
         "description": "css reset snippet"
+    },
+    "flex_vertical_center": {
+        "prefix": "flexvc",
+        "body": [
+            "display:flex;\njustify-content:center;\nalign-items:center;"
+        ],
+        "description": "flex vertical center"
     }
 }
