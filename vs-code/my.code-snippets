@@ -1,9 +1,8 @@
 {
     "scLink": {
-        "prefix": "sclink",
+        "prefix": "scriptHtmlBlock",
         "body": [
-            "<script src=\"assets/$1.js\"></script>",
-            "\t$2"
+            "<script src=\"assets/main.js\">\n    var theDom = document.getElementById(\"aaa\");\n    $1\n</script>"
         ],
         "description": "script link"
     },
@@ -35,5 +34,68 @@
             "display:flex;\njustify-content:center;\nalign-items:center;"
         ],
         "description": "flex vertical center"
+    },
+    "bg_img_normal": {
+        "prefix": "bgn",
+        "body": [
+            "background: transparent url(\"../img/$1\") no-repeat left top;\nbackground-size: 100% auto;"
+        ],
+        "description": "background image normal"
+    },
+    "transition_opacity": {
+        "prefix": "transio",
+        "body": [
+            "opacity: 1;\ntransition: opacity 1s;"
+        ],
+        "description": "transition opacity"
+    },
+    "transition_transform": {
+        "prefix": "transit",
+        "body": [
+            "transform: translate(-10px, 0);\ntransition: transform 1s;"
+        ],
+        "description": "transition translate"
+    },
+    "animation_keyframes": {
+        "prefix": "anikey",
+        "body": [
+            "@-webkit-keyframes name1{\n    0% {-webkit-transform: translateX(-20px);}\n    100% {-webkit-transform: translateX(-20px);}\n}\n@keyframes name1{\n    0% {transform: translateX(-20px);}\n    100% {transform: translateX(-20px);}\n}"
+        ],
+        "description": "animation keyframes"
+    },
+    "animation_simple": {
+        "prefix": "anims",
+        "body": [
+            "animation: $1 3s infinite forwards;"
+        ],
+        "description": "animation simple"
+    },
+    "position_absolute_full": {
+        "prefix": "posafull",
+        "body": [
+            "position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 1;"
+        ],
+        "description": "position absolute fullscreen"
+    },
+    "position_absolute_corner": {
+        "prefix": "posacorner",
+        "body": [
+            "position: absolute; width: 40px; height: 40px; right: 15px; top: 15px; z-index: 1;"
+        ],
+        "description": "position absolute at right corner"
+    },
+    "step_frame": {
+        "prefix": "stepframecss",
+        "body": [
+            ".nameframe {\n    background: transparent url(\"../img/ct-frame.png\") 0 0;\n    background-size: 1600% auto;\n    position: absolute; width: 100%; height: 100%; left: 0; top: 0;\n    -webkit-animation: stepscover 3s steps(16) infinite both;\n    animation: stepscover 3s steps(16) infinite both;\n}\n@keyframes stepscover {\n    from {background-position: 0 0;}\n    to {background-position: -1600% 0;}\n}"
+        ],
+        "description": "step frame animation"
+    },
+    "disable_touch": {
+        "prefix": "cssDisableTouchEvent",
+        "body": [
+            "touch-action: none; user-select: none; -webkit-user-drag: none; pointer-events: none;"
+        ],
+        "description": "css disable Touch & click Event"
     }
 }
